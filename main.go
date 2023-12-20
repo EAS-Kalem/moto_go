@@ -4,7 +4,7 @@ import (
 	"flag"
 		 "log"
 		 "fmt"
-		 "api/server.go"
+		 "github.com/EAS-Kalem/moto_go/api"
 	)
 
 func main () {
