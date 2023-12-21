@@ -1,10 +1,12 @@
 package api
 
-import {
+import (
 	"net/http"
-
 	"github.com/EAS-Kalem/moto_go/storage"
-}
+	"github.com/EAS-Kalem/moto_go/types"
+	"github.com/EAS-Kalem/moto_go/api"
+);
+
 type Server struct {
 	listenAddr string
 	storage storage.Storage
