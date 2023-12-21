@@ -3,7 +3,7 @@ package api
 import {
 	"net/http"
 
-	import "github.com/EAS-Kalem/moto_go/storage"
+	"github.com/EAS-Kalem/moto_go/storage"
 }
 type Server struct {
 	listenAddr string
