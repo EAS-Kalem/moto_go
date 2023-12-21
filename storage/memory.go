@@ -1,8 +1,7 @@
 package storage
 
-import (
-	"github.com/EAS-Kalem/moto_go/types"
-)
+import "github.com/EAS-Kalem/moto_go/types"
+
 
 type MemoryStorage struct{}
 

@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"github.com/EAS-Kalem/moto_go/storage"
 	"github.com/EAS-Kalem/moto_go/types"
-);
+)
 
 type Server struct {
 	listenAddr string
