@@ -4,21 +4,19 @@ import (
 	"net/http"
 	"github.com/EAS-Kalem/moto_go/storage"
 	"github.com/EAS-Kalem/moto_go/types"
-	"github.com/EAS-Kalem/moto_go/api"
 );
 
 type Server struct {
 	listenAddr string
-	storage storage.Storage
+	store storage.Storage
 }
 
-func NewServer (listenAddr string ) *Server {
+func NewServer (listenAddr string, store storage.Storage ) *Server {
 	return &Server {
 		listenAddr: listenAddr,
 		store: store,
 	}
 }
-
 
 func (s *Server) Start() error {
 	http.HandleFunc("/user", s.handleGetUserByID)
